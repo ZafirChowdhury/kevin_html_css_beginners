@@ -4,7 +4,7 @@
 
 body {
     font-family: sans-serif;
-    font-size: 1.25rem;
+    font-size: 1rem;
     line-height: 1.6;
 }
 
@@ -16,7 +16,7 @@ h1 {
     text-align: center;
     font-size: 5rem;
     line-height: 1.1;
-    color: #4676A9;
+    color: gray;
 }
 
 h2 {
@@ -43,4 +43,45 @@ footer {
 
 .image {
     text-align: center;
+}
+
+img {
+    display: block;
+    max-inline-size: 100%;
+}
+
+.teal-bg {
+    background-color: #087A98;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+    border: solid #0E84CF 10px;
+}
+
+.teal-text {
+    color: #087A98;
+}
+
+a {
+    color: #087A98;
+}
+
+a:hover,
+a:focus-visible {
+    color: purple;
+}
+
+.climber-bg {
+    background-image: url("../images/simple-steps.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+    padding: 20px;
+    border: solid #087A98 10px;
+}
+
+.wrapper {
+    max-inline-size: 1000px;
+    margin-inline: auto;
 }
