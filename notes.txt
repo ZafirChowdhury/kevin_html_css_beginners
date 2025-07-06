@@ -1,0 +1,53 @@
+Only 1 <h1> for per webpage. It acts as the title of the page.
+
+Use <h> tags for hierarchy/structure of a webpage
+same types of content should have the same <h>
+
+lower <h> gets nested inside of higher <h>
+
+CSS
+
+text align start center end
+
+images are inline element
+if I just want the image in the center I can just use text align center to the parent of the image
+
+
+Mesurements
+
+px are the most used css mesurment 
+but for font-size use rem, (best practice)
+dont overwrite user preference
+dont change the font size of the <html> tag
+
+rem = font-size of the parent IE 16px
+so use multiples of rem to have a consistent size
+so if the user changes the defult font size the rest of the elements change consistently
+
+line-height: 1.6; sets the line hight to 1.6x of the font size
+
+margin -> wight space around an element box model
+margin-block: 50px; adding 50px on block element, top and bottom?
+
+everything in CSS is a box
+
+inline-size = width
+inline-size -> the size of the box in the line that it is taking up
+block-size = hight
+
+block -> top(start) and bottom(end)
+inline -> left(start) and right(end)
+
+use inline-size and block-size instead of width and height
+it makes more logical naming
+
+if u need more backgroud use padding
+
+padding -> backgroud
+border -> can use diffrent color from background
+
+padding -> empty space that includes the backgroud color, around the border
+margine -> empty space but no backgroud colour, around the content box
+
+content box -> padding -> border -> margin 
+holds content -> for more backgorud colour -> for adding border -> empty space with no colour used for seperating elemnts?
