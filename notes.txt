@@ -77,3 +77,25 @@ img {
 } -> makes the image responsive, 100% of what? -> 100% of the parent
 so image shrink and grow with there parents size, it will never be larger then the real res of the image
 also set image to block 
+
+
+display: grid;
+grid-template-columns: 1fr 1fr; -> Create 2 col 
+
+display: flex; -> Box take up space required for the content and can be use to create responsive degien
+justify-content: space-between; -> Others exist see while working on projects
+
+
+.two-column-layout {
+    display: grid;
+    gap: 60px;
+}
+
+@media (width > 600px) {
+    .two-column-layout{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+2 col layout will be stacked if screen size is below 600px
+I may be able to also do so it creates 3 col layout then 2 then 1

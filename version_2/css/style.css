@@ -2,14 +2,15 @@
     box-sizing: border-box;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
 body {
     font-family: sans-serif;
     font-size: 1rem;
     line-height: 1.6;
-}
-
-header {
-    text-align: center;
 }
 
 h1 {
@@ -31,6 +32,20 @@ p {
     margin-block: 30px;
 }
 
+a {
+    color: #087A98;
+}
+
+a:hover,
+a:focus-visible {
+    color: purple;
+}
+
+img {
+    display: block;
+    max-inline-size: 100%;
+}
+
 footer {
     text-align: center;
     color: #FFFFFF;
@@ -41,13 +56,42 @@ footer {
     margin-inline: 70px;
 }
 
-.image {
-    text-align: center;
+.wrapper {
+    max-inline-size: 1000px;
+    margin-inline: auto;
 }
 
-img {
-    display: block;
-    max-inline-size: 100%;
+.two-column-layout {
+    display: grid;
+    gap: 60px;
+    margin-block-end: 40px;
+
+    @media (width > 600px) {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.primary-navigation ul {
+    display: flex;
+    gap: 10px;  
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.primary-navigation a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.primary-navigation a:focus-visible, 
+.primary-navigation a:hover {
+    color: #087A98;
+}
+
+.image {
+    text-align: center;
 }
 
 .teal-bg {
@@ -62,15 +106,6 @@ img {
     color: #087A98;
 }
 
-a {
-    color: #087A98;
-}
-
-a:hover,
-a:focus-visible {
-    color: purple;
-}
-
 .climber-bg {
     background-image: url("../images/simple-steps.jpg");
     background-repeat: no-repeat;
@@ -79,9 +114,4 @@ a:focus-visible {
     color: #FFFFFF;
     padding: 20px;
     border: solid #087A98 10px;
-}
-
-.wrapper {
-    max-inline-size: 1000px;
-    margin-inline: auto;
 }
